@@ -4,11 +4,7 @@ phases:
     commands:
       - uname -a
       - yum update -y
-      - echo list available openjdk packages
-      - yum list *openjdk*
-      - echo install openjdk packages
-      - yum install -y java-latest-openjdk-devel java-latest-openjdk-jmods
-      - echo show default java version
+      - dnf -y install java-21-amazon-corretto
       - echo $JAVA_HOME
       - java -version
       - cd /usr/lib/jvm
