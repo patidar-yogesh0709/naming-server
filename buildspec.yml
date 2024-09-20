@@ -5,6 +5,8 @@ phases:
     - uname -a
     - yum update -y
     - dnf -y install java-21-amazon-corretto
+    - echo print java home
+    - echo $JAVA_HOME
   pre_build:
     commands:
     - echo In the pre_build phase...
